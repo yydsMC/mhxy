@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://剑侠情缘零手游书院夫子每日答题/index.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+<meta name="keywords" content="梦幻西游法宝合成">
+<meta name="description" content="梦幻西游法宝合成">
+<title>梦幻西游法宝合成</title>
+
+<link href="static/css/toolkit.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="#">
+<script type="text/javascript" src="static/js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/data-magicweapon.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/antiqi.js" charset="utf-8"></script>
+<style>
+  .pc {
+    display: table; /* 使用表格布局 */
+    width: 100%; /* 容器宽度占满父元素 */
+    text-align: center; /* 水平居中 */
+  }
+  .pc img {
+    display: inline-block; /* 使图片并排显示 */
+    vertical-align: middle; /* 垂直居中 */
+    /* width: 10%; 宽比 */
+    /* height: 10%; 高比 */
+  }
+   .zoom-img {
+    transition: transform 0.25s ease; /* 平滑过渡效果 */
+    }
+   .zoom-img:hover {
+    transform: scale(4); /* 鼠标悬停时放大4倍 */
+    }
+   .colorfocus{
+            /*设置字体大小*/
+            font-size: 30px;
+            /*字体加粗*/
+            font-weight: bold;
+            /*设置字体颜色为透明色*/
+            color: transparent;
+            /*设置盒子的背景颜色*/
+            background-image: linear-gradient(45deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+            background-size: 300%;
+            /*通过background-clip属性按照文字轮廓裁剪*/
+            background-clip: text;
+            /*添加动画animation：动画名 动画持续时间 匀速 循环播放 */
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 300% 0;
+            }
+            100% {
+                background-position: -300% 0;
+            }
+        }
+</style>
+</head>
+<body>
+<iframe frameborder="0" style="position: absolute; display: none; opacity: 0;"></iframe>
+<div class="syxy">
+  <!--<div class="sya sy"><img src="static/picture/1747122572142_jiaoyi.jpg" width=70% height=70% class="autoimg" alt="" style="display: block; margin: 0 auto;></div>-->
+  <div class="pc"><img src="static/picture/200.png" width=10% height=10% alt=""></div>
+  <div class="pc">
+    <!--<img src="static/picture/1.png" width=10% height=10% alt="">
+	<img src="static/picture/2.png" width=10% height=10% alt="">
+	<img src="static/picture/3.png" width=10% height=10% alt="">
+	<img src="static/picture/4.png" width=10% height=10% alt="">
+	<img src="static/picture/5.png" width=10% height=10% alt="">-->
+	<div class="colorfocus">梦幻西游畅玩服</div>
+	<img src="static/picture/珍宝阁.png" width=5% height=5% alt="" class="zoom-img">
+  </div>
+  <div class="cheakblock">
+    
+    <!--法宝合成-->
+    <div class="syc sy impCalculator cur">
+      <div class="answer">
+        <div class="ans2 answ">
+          <div class="soso fr">
+            <input type="text" value="请输入关键词查询" class="ans-txt input1" oninput="searchData(this,event)" onClick="if(this.value==&#39;请输入关键词查询&#39;){this.value=&#39;&#39;}" onBlur="if(this.value==&#39;&#39;){this.value=&#39;请输入关键词查询&#39;}" id="keywords">
+            <input type="button" class="input2" value="重  置" onclick="clean()">
+          </div>
+        </div>
+        <div class="ans3 answ">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr class="noborder">
+                <td width="30%" class="title1">法宝名称</td>
+                <td class="title1 tt">材料-五行</td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" id="result">
+		  <tbody>
+		  <tr>
+		      <td width="30%">碧玉葫芦</td><td align="center">天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水</td>
+		  </tr>
+		  <tr>
+		      <td width="30%">飞剑</td><td align="center">玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
+		  </tr>
+		  <tr>
+		      <td width="30%">试剑石</td><td align="center">麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
+		  </tr>
+		  <tr>
+		      <td width="30%">金甲仙衣</td><td align="center">天蚕丝-金&nbsp&nbsp玄龟板-水&nbsp&nbsp内丹-土</td>
+		  </tr>
+		  </tbody>    
+		  <tbody>
+        <tr class="no_data" style="display: none;">
+          <td colspan="2">找不到相关结果，换个关键字试试！ </td>
+        </tr>
+      </tbody>
+</table>
+        </div>
+      </div>
+    </div>
+    <!--法宝合成-->
+
+  </div>
+
+	<div id="" class="footer">
+		<div>
+    	
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript" src="static/js/toolkit.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/clip.js" charset="utf-8"></script>
+<div style="display:none">
+
+</div>
+<script>
+$(function(){
+	$("#result").show();
+});
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c3cd77582f2f67671e7d0bd0e8ed2589";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- START NetEase Devilfish 2025 -->
+<script type="text/javascript" src="static/js/ntes.js"></script>
+<script type="text/javascript">_ntes_nacc = "梦幻西游法宝合成";neteaseTracker();</script>
+<!-- END NetEase Devilfish 2025 -->
+
+
+</body>
+</html>
