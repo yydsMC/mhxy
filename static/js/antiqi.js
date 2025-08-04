@@ -24,7 +24,7 @@ var loadData = function(str){
 		for(var i=0;i<xlcount;i++){
 			if(j<20){	
 				if(j%2==1){
-					result += '<tr><td width="30%">'+xlinfo[ser_id[i]]['question']+'</td><td align="center">'+xlinfo[ser_id[i]]['opt1']+'</td></tr>';
+					result += '<tr><td width="50%">'+xlinfo[ser_id[i]]['question']+'</td><td align="center">'+xlinfo[ser_id[i]]['opt1']+'</td></tr>';
 				}
 				//result += '<li class="sec3li1">'+xlinfo[ser_id[i]]['question']+'</li><li class="sec3li2">'+xlinfo[ser_id[i]]['opt1']+'</li>';
 			}

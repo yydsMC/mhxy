@@ -9,11 +9,28 @@
 <title>梦幻西游法宝合成</title>
 
 <link href="static/css/toolkit.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="#">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <script type="text/javascript" src="static/js/jquery.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="static/js/data-magicweapon.js" charset="utf-8"></script>
 <script type="text/javascript" src="static/js/antiqi.js" charset="utf-8"></script>
 <style>
+<!--BlackSet
+html{
+    -wenkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -0-filter: grayscale(100%);
+    filter: grayscale(100%);
+	background:#ffffff;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+	}
+*{
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -0-filter: grayscale(100%);
+    filter: gray;
+}-->
   .pc {
     display: table; /* 使用表格布局 */
     width: 100%; /* 容器宽度占满父元素 */
@@ -55,6 +72,19 @@
                 background-position: -300% 0;
             }
         }
+   .container {
+    text-align: center; /* 水平居中 */
+    background-color: #f0f0f0; /* 容器背景色 */
+    padding: 20px; /* 容器内边距 */
+              }
+   .container a {
+    background-color: #374d5f; /* 链接背景色 */
+    padding: 10px 20px; /* 链接内边距 */
+    text-decoration: none; /* 去除下划线 */
+    color: #ffffff; /* 链接文字颜色 */
+    border-radius: 5px; /* 圆角 */
+    margin: 0 5px; /* 左右间隙 */
+               }
 </style>
 </head>
 <body>
@@ -70,9 +100,9 @@
 	<img src="static/picture/5.png" width=10% height=10% alt="">-->
 	<div class="colorfocus">梦幻西游畅玩服</div>
 	<img src="static/picture/珍宝阁.png" width=5% height=5% alt="" class="zoom-img">
+	<div class="container"><a href="index.html">法宝合成</a><a href="cheatlist/index.html" target="_blank">骗子查询</a></div>
   </div>
   <div class="cheakblock">
-    
     <!--法宝合成-->
     <div class="syc sy impCalculator cur">
       <div class="answer">
@@ -86,7 +116,7 @@
           <table width="100%" cellpadding="0" cellspacing="0" border="0">
             <tbody>
               <tr class="noborder">
-                <td width="30%" class="title1">法宝名称</td>
+                <td width="50%" class="title1">法宝名称</td>
                 <td class="title1 tt">材料-五行</td>
               </tr>
             </tbody>
@@ -94,21 +124,21 @@
           <table width="100%" cellpadding="0" cellspacing="0" border="0" id="result">
 		  <tbody>
 		  <tr>
-		      <td width="30%">碧玉葫芦</td><td align="center">天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水</td>
+		      <td width="50%">碧玉葫芦</td><td align="center">天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水</td>
 		  </tr>
 		  <tr>
-		      <td width="30%">飞剑</td><td align="center">玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
+		      <td width="50%">飞剑</td><td align="center">玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
 		  </tr>
 		  <tr>
-		      <td width="30%">试剑石</td><td align="center">麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
+		      <td width="50%">试剑石</td><td align="center">麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
 		  </tr>
 		  <tr>
-		      <td width="30%">金甲仙衣</td><td align="center">天蚕丝-金&nbsp&nbsp玄龟板-水&nbsp&nbsp内丹-土</td>
+		      <td width="50%">金甲仙衣</td><td align="center">天蚕丝-金&nbsp&nbsp玄龟板-水&nbsp&nbsp内丹-土</td>
 		  </tr>
 		  </tbody>    
 		  <tbody>
         <tr class="no_data" style="display: none;">
-          <td colspan="2">找不到相关结果，换个关键字试试！ </td>
+          <td colspan="2">找不到相关结果，换个法宝名称试试！ </td>
         </tr>
       </tbody>
 </table>
@@ -152,6 +182,28 @@ var _hmt = _hmt || [];
 <script type="text/javascript">_ntes_nacc = "梦幻西游法宝合成";neteaseTracker();</script>
 <!-- END NetEase Devilfish 2025 -->
 
-
+<script type="text/javascript">
+$(document).ready(function(){
+    var a_index = 0;
+    $("body").click(function(e){
+        var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_index]);
+        a_index = (a_index + 1) % a.length;
+        var x = e.pageX,y = e.pageY;
+        $i.css({
+            "z-index": 99999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "#ff6651"
+        });
+        $("body").append($i);
+        $i.animate({"top": y-180,"opacity": 0},1500,function() {
+            $i.remove();
+        });
+    });
+});
+</script>
 </body>
 </html>
