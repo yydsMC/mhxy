@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://梦幻西游beginner/index.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+<meta name="keywords" content="梦幻西游beginner">
+<meta name="description" content="梦幻西游beginner">
+<title>梦幻西游beginner</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+<style>
+<!--BlackSet
+html{
+    -wenkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -0-filter: grayscale(100%);
+    filter: grayscale(100%);
+	background:#ffffff;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+	}
+*{
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -0-filter: grayscale(100%);
+    filter: gray;
+}-->
+  .containerhtml {
+    display: flex;
+  }
+  .left, .right {
+    width: 20%; /* 可以根据需要调整宽度 */
+    background-color: lightblue; /* 仅为区分，实际应用中可以去除 */
+  }
+  .center {
+    flex: 1; /* 占据剩余空间 */
+    background-color: lightcoral; /* 仅为区分，实际应用中可以去除 */
+  }
+  
+  .pc {
+    display: table; /* 使用表格布局 */
+    width: 100%; /* 容器宽度占满父元素 */
+    text-align: center; /* 水平居中 */
+  }
+  .pc img {
+    display: inline-block; /* 使图片并排显示 */
+    vertical-align: middle; /* 垂直居中 */
+    /* width: 10%; 宽比 */
+    /* height: 10%; 高比 */
+  }
+   .zoom-img {
+    transition: transform 0.25s ease; /* 平滑过渡效果 */
+    }
+   .zoom-img:hover {
+    transform: scale(4); /* 鼠标悬停时放大4倍 */
+    }
+   .colorfocus{
+            /*设置字体大小*/
+            font-size: 30px;
+            /*字体加粗*/
+            font-weight: bold;
+            /*设置字体颜色为透明色*/
+            color: transparent;
+            /*设置盒子的背景颜色*/
+            background-image: linear-gradient(45deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+            background-size: 300%;
+            /*通过background-clip属性按照文字轮廓裁剪*/
+            background-clip: text;
+            /*添加动画animation：动画名 动画持续时间 匀速 循环播放 */
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 300% 0;
+            }
+            100% {
+                background-position: -300% 0;
+            }
+        }
+   .container {
+    text-align: center; /* 水平居中 */
+    background-color: #f0f0f0; /* 容器背景色 */
+    padding: 20px; /* 容器内边距 */
+              }
+   .container a {
+    background-color: #374d5f; /* 链接背景色 */
+    padding: 10px 20px; /* 链接内边距 */
+    text-decoration: none; /* 去除下划线 */
+    color: #ffffff; /* 链接文字颜色 */
+    border-radius: 5px; /* 圆角 */
+    margin: 0 5px; /* 左右间隙 */
+               }
+	.float {
+    float: float; /* 或者 float: right; */
+    }
+</style>
+</head>
+<body>
+<div class="containerhtml">
+<div class="left"></div>
+<div class="center">
+<iframe frameborder="0" style="position: absolute; display: none; opacity: 0;"></iframe>
+<div class="syxy">
+  <!--<div class="sya sy"><img src="static/picture/1747122572142_jiaoyi.jpg" width=70% height=70% class="autoimg" alt="" style="display: block; margin: 0 auto;></div>-->
+  <div class="pc"><img src="static/picture/200.png" width=10% height=10% alt=""></div>
+  <div class="pc">
+    <!--<img src="static/picture/1.png" width=10% height=10% alt="">
+	<img src="static/picture/2.png" width=10% height=10% alt="">
+	<img src="static/picture/3.png" width=10% height=10% alt="">
+	<img src="static/picture/4.png" width=10% height=10% alt="">
+	<img src="static/picture/5.png" width=10% height=10% alt="">-->
+	<div class="colorfocus">梦幻西游畅玩服</div>
+	<img src="static/picture/珍宝阁.png" width=5% height=5% alt="" class="zoom-img">
+	<div class="container"><a href="beginner.html">新手知识</a><a href="index.html">法宝合成</a><a href="cheatlist/index.html" target="_blank">骗子查询</a></div>
+	<p>梦幻精灵有海量知识库,有不懂的可以多问问(好友栏第一个,或点击右下角图标)
+  </div>
+</div>
+
+<div style="text-align:center;">
+<button class="float" id="btn1">角色加点</button>&nbsp;&nbsp;&nbsp;
+<button class="float" id="btn2">宝宝加点</button>&nbsp;&nbsp;&nbsp;
+<button class="float" id="btn3">合宠炼妖</button>&nbsp;&nbsp;&nbsp;
+<button class="float" id="btn4">帮派发展</button>
+</div>
+
+<div id="content1" style="display:none;text-align:left;">
+物理门派：(随等级提高力量提升伤害越高)<br>
+            大唐  4力1体<br>
+            狮驼 5力<br>
+            五庄 4力1耐<br>
+            天宫 4力1耐<br>
+法系门派：(随等级提高魔力提升伤害越高)<br>
+            龙宫 4魔1耐<br>
+            魔王 4魔1体<br>
+            化生 法系4魔1体/辅助2耐2体1敏<br>
+            方寸 4魔1体<br>
+固伤门派：(随等级提高敏捷/力量提升伤害越高)<br>
+            女儿 4敏1体<br>
+            普陀 4敏1耐<br>
+            地府 4敏1体<br>
+            盘丝 4力1体<br>
+仅供参考,其它特殊加点玩法不建议平民玩家使用!</div>
+
+<div id="content2" style="display:none;text-align:left;">
+1.敏法宝宝<br>
+加点:60级之前全魔加点  69以后先加速度  速度加到人物等级*.,剩下的全魔加点<br>
+五开优先考虑高魔心,其实高敏捷,其次高法爆<br>
+单开优先考虑高魔心,其实高法爆,其次高法连<br>
+蝴蝶仙子,如意仙子,鼠先锋<br>
+适合中午飞贼,环活动,周末活动,简单副本任务<br><br>
+
+2.攻宝宝<br>
+加点:速度加到人物等级*2,血量加到人物等级*20,其他全力加点<br>
+五开蓝书优先考虑 必杀 夜战 偷吸 吸血(壁垒也可以)<br>
+五开红书优先考虑 高连 高必 高偷 高夜<br>
+攻资1500+ 防资1400+ 速资1400+  成长1.254<br>
+芙蓉仙子 百足将军<br>
+适合主怪血量比较多的任务 或者需要点杀的<br>
+抓鬼 剧情 天降星辰都很好用<br><br>
+
+3.血敏宝宝(难度任务帮人物抗伤害)<br>
+加点:速度快过人物百分之10(需要考虑阵法,宝宝敏捷技能带来的速度加成)速度够之后其余全加血<br>
+五开技能推荐:敏捷 高否 高再生 高招架<br>
+单开技能推荐:高敏 高神 高防御 高反震(招架)<br>
+鼠先锋 凤凰 雨师 灵符女娲 芙蓉仙子<br>
+因为游戏怪物的法术群秒优先打到我们这边速度快的单位,适合难度副本(黑风山boss,封变异妖)<br><br>
+
+4.耐卡宝宝(难度任务帮人物抗伤害)<br>
+加点:防御加到(人物等级-10)*10就行,如80级就加到70防御就够了,然后再加速度快过人物百分之10<br>
+剩下属性点加体<br>
+鼠先锋 芙蓉仙子<br>
+对比血敏宝宝,耐卡宝宝的防御更高,不怕物理伤害<br>
+这种宝宝是点卡服做大闹天宫副本的时候用的,畅玩服血敏宝宝就够用了<br><br>
+
+五开推荐有一组血宠 一组攻宝宝 两组血敏最好<br>
+这样基本可以通刷所有任务</div>
+
+<div id="content3" style="display:none;text-align:left;">
+<img src="static/picture/炼妖.png" width=100% height=100% alt="">
+</div>
+
+<div id="content4" style="display:none;text-align:left;">
+青龙药:孔雀红 凤凰尾 血珊瑚 鹿茸 地域灵芝 血色茶花(仙灵店和建邺药店有卖)<br>
+厢房任务采药探险:必给二药  <br> 
+花果山  鹿茸<br> 
+海底迷宫  血珊瑚<br>
+凤巢一  孔雀红<br>
+凤巢七  凤凰尾<br>
+大雁塔  血色茶花<br>
+地狱迷宫  地狱灵芝<br><br>
+
+跑商:白虎堂领任务<br>
+线路1:地府买→→北俱卖→→北俱买→→地府卖----资金够了回白虎堂交票<br>
+线路2:长安买→→长寿卖→→回傲来买→→长寿卖----(感觉资金差不多了)长寿买→→卖长安(北俱买→→卖地府)----资金够了回白虎堂交票<br>
+线路3:长安买→→长寿卖→→长寿买→→长安卖----资金够了回白虎堂交票<br><br>
+                                                                                      
+跑商商人货物刷新时间:每10分10秒<br>
+卖价二次刷新时间:以帮派维护时间为准<br>
+如1:帮派下次维护时间15:37,记住这个7,以后每个货商二次刷新价格的时间就是7 17 27 37 47 57分钟的时候<br>
+如2:帮派下次维护时间15:40,刷新货物的时间就是二次刷新价格的时间.同时的,所以不存在二次刷新价格<br>
+参考价:<br>
+地府&nbsp;&nbsp;纸钱3000&nbsp;&nbsp;夜明珠8000&nbsp;&nbsp;首饰4300&nbsp;&nbsp;珍珠5500<br>
+长安&nbsp;&nbsp;棉布3500&nbsp;&nbsp;佛珠7000&nbsp;&nbsp;扇子3800&nbsp;&nbsp;武器4000<br>
+傲来&nbsp;&nbsp;帽子3500&nbsp;&nbsp;盐5500&nbsp;&nbsp;蜡烛2000&nbsp;&nbsp;商品酒4000<br>
+北俱&nbsp;&nbsp;衣甲2700&nbsp;&nbsp;人参7500&nbsp;&nbsp;铃铛4300&nbsp;&nbsp;商品油4000<br>
+长寿&nbsp;&nbsp;木材4400&nbsp;&nbsp;鹿茸7500&nbsp;&nbsp;面粉3000&nbsp;&nbsp;商品符5300<br><br>
+
+帮派升级核心条件‌<br>
+‌1. 基础条件‌<br>
+‌建筑数量‌：需有2类建筑数量达到当前规模×4（如1级帮需每类建筑4座）。‌‌<br>
+‌资金要求‌：升级资金≥1000万+48×规模×1万（如5级升6级需≥1240万）。‌‌<br>
+‌繁荣度与人气值‌：均需≥1000点。‌‌<br>
+‌2. 技能要求（5级及以上）‌<br>
+5级升6级：需4个技能满级或≥150级，或6个技能≥120级，或8个技能≥100级。‌‌<br>
+6级升7级：需7个技能满级或≥140级。‌‌<br>
+2级帮只能开一种修炼,3级帮2种,4级帮3种,5级以上开启4种(帮主可花费300W帮派资金随时修改成其他修炼类型)<br><br>
+
+‌分阶段升级策略‌<br>
+‌1. 1级→2级帮‌<br>
+‌必建建筑‌：4级书院、4级厢房（新区可加药房）。‌‌<br>
+‌维护控制‌：初期维护费低，建议成员达40人后再扩厢房，避免资金压力。‌‌<br><br>
+
+‌2. 2级→3级帮‌<br>
+‌优先建筑‌：8级书院（加速技能研究）、8级厢房（扩容至120人）或8级药房（节省费用）。‌‌<br>
+‌经济方案‌：资金紧张时可选择8级仓库（增加资材）或药房替代部分书院。‌‌<br><br>
+
+‌3. 3级→5级帮‌<br>
+‌停留建议‌：在3级帮时重点研究技能（如强身、冥想），推荐建筑方案：<br>
+- 均衡型：8书院+8药房+8仓库+6厢房。‌‌<br>
+- 快速发展型：12书院+8仓库+6厢房+4药房。‌‌<br>
+‌资金管理‌：通过成员点修、跑商或丢盒子维持资金。‌‌<br><br>
+
+‌4. 5级→7级帮‌<br>
+‌技能准备‌：提前规划4-7个满级技能（如强身、冥想、打造等）。‌‌<br>
+‌青龙任务‌：需完成1750点建设进度，可组织成员集中刷任务，注意第10环需2级家具。‌‌<br><br>
+
+‌关键注意事项‌<br>
+‌建筑成本公式‌：<br>
+书院：120+30×等级（万两）。<br>
+厢房：80+20×等级（万两）。<br>
+仓库/金库：40+10×等级（万两）。‌‌<br>
+‌技能上限调整‌：6级帮后部分技能上限提升（如强身术120→140级），新增灵石、熔炼技巧。‌‌<br>
+‌人气维护‌：每日需至少16点人气增长，避免帮派解散。‌‌
+</div>
+</div>
+<div class="right"></div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('btn1').addEventListener('click', function() {
+		var contentDiv = document.getElementById('content1');
+		if (contentDiv.style.display === 'none') {
+        contentDiv.style.display = 'block'; // 显示内容
+    } else {
+        contentDiv.style.display = 'none'; // 隐藏内容（可选，如果你想在再次点击按钮时隐藏内容）
+    }
+    });
+ 
+    document.getElementById('btn2').addEventListener('click', function() {
+		var contentDiv = document.getElementById('content2');
+		if (contentDiv.style.display === 'none') {
+        contentDiv.style.display = 'block'; // 显示内容
+    } else {
+        contentDiv.style.display = 'none'; // 隐藏内容（可选，如果你想在再次点击按钮时隐藏内容）
+    }
+    });
+	
+	document.getElementById('btn3').addEventListener('click', function() {
+		var contentDiv = document.getElementById('content3');
+		if (contentDiv.style.display === 'none') {
+        contentDiv.style.display = 'block'; // 显示内容
+    } else {
+        contentDiv.style.display = 'none'; // 隐藏内容（可选，如果你想在再次点击按钮时隐藏内容）
+    }
+    });
+	
+	document.getElementById('btn4').addEventListener('click', function() {
+		var contentDiv = document.getElementById('content4');
+		if (contentDiv.style.display === 'none') {
+        contentDiv.style.display = 'block'; // 显示内容
+    } else {
+        contentDiv.style.display = 'none'; // 隐藏内容（可选，如果你想在再次点击按钮时隐藏内容）
+    }
+    });
+});
+</script>
+</body>
+</html>
