@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0070)http://梦幻西游法宝合成/index.html -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/buttons.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=no, width=device-width" name="viewport">
+<meta name="keywords" content="梦幻西游法宝合成">
+<meta name="description" content="梦幻西游法宝合成">
+<title>梦幻西游法宝合成</title>
 
-<style type="text/css">
+<link href="static/css/toolkit.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<script type="text/javascript" src="static/js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/data-magicweapon.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/antiqi.js" charset="utf-8"></script>
+<style>
 <!--BlackSet
 html{
     -wenkit-filter: grayscale(100%);
@@ -26,17 +31,26 @@ html{
     -0-filter: grayscale(100%);
     filter: gray;
 }-->
+  .pc {
+    display: table; /* 使用表格布局 */
+    width: 100%; /* 容器宽度占满父元素 */
+    text-align: center; /* 水平居中 */
+  }
+  .pc img {
+    display: inline-block; /* 使图片并排显示 */
+    vertical-align: middle; /* 垂直居中 */
+    /* width: 10%; 宽比 */
+    /* height: 10%; 高比 */
+  }
    .zoom-img {
     transition: transform 0.25s ease; /* 平滑过渡效果 */
     }
    .zoom-img:hover {
-    transform: scale(2); /* 鼠标悬停时放大2倍 */
+    transform: scale(4); /* 鼠标悬停时放大4倍 */
     }
    .colorfocus{
             /*设置字体大小*/
             font-size: 30px;
-			/* 水平居中 */
-			text-align: center;
             /*字体加粗*/
             font-weight: bold;
             /*设置字体颜色为透明色*/
@@ -58,167 +72,115 @@ html{
                 background-position: -300% 0;
             }
         }
+   .container {
+    text-align: center; /* 水平居中 */
+    background-color: #f0f0f0; /* 容器背景色 */
+    padding: 20px; /* 容器内边距 */
+              }
+   .container a {
+    background-color: #374d5f; /* 链接背景色 */
+    padding: 10px 20px; /* 链接内边距 */
+    text-decoration: none; /* 去除下划线 */
+    color: #ffffff; /* 链接文字颜色 */
+    border-radius: 5px; /* 圆角 */
+    margin: 0 5px; /* 左右间隙 */
+               }
 </style>
-
-<title>梦幻西游骗子信息收集</title>
 </head>
-
-<body class="container">
-<div class="colorfocus">梦幻西游畅玩服〖紫气东来〗骗子查询</div>
-<br>
-
-<table id="maintable" class="display compact cell-border" cellspacing="0" width="100%">
-    <thead>
-    <tr>
-        <th>游戏名</th>
-        <th>游戏ID</th>
-        <th>微信号</th>
-        <th>事件性质</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>德芙丶</td>
-        <td>12621087</td>
-        <td></td>
-        <td><img border="0"  src="./images/1.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-
-    <tr>
-        <td>双笙</td>
-        <td>14563634</td>
-        <td></td>
-        <td><img border="0"  src="./images/2.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>老玩家回归</td>
-        <td>15324606</td>
-        <td></td>
-        <td><img border="0"  src="./images/3.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>暮华君衣</td>
-        <td>12373493</td>
-        <td></td>
-        <td><img border="0"  src="./images/4.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>火手判官</td>
-        <td>14816642</td>
-        <td></td>
-        <td><img border="0"  src="./images/5.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>许叹东旧</td>
-        <td>12506200</td>
-        <td></td>
-        <td><img border="0"  src="./images/6.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>花朝池仙枝</td>
-        <td>15429701</td>
-        <td></td>
-        <td><img border="0"  src="./images/7.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>轩彩娥</td>
-        <td>18584611</td>
-        <td></td>
-        <td><img border="0"  src="./images/8.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>OO0</td>
-        <td>14885834</td>
-        <td></td>
-        <td><img border="0"  src="./images/9.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>霓裳指星随</td>
-        <td>19161809</td>
-        <td></td>
-        <td><img border="0"  src="./images/10.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>如沐春风</td>
-        <td>15619634</td>
-        <td></td>
-        <td><img border="0"  src="./images/11.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>weelessay</td>
-        <td>18699115</td>
-        <td></td>
-        <td><img border="0"  src="./images/12.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-    <tr>
-        <td>小季收一切</td>
-        <td>12992384</td>
-        <td>真实姓名:费田浩<br>河南洛阳95年出生</td>
-        <td><img border="0"  src="./images/13.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-	<tr>
-        <td>花朝临轻夜</td>
-        <td>12909241</td>
-        <td></td>
-        <td><img border="0"  src="./images/14.png" width=100% height=100% alt="" class="zoom-img" alt="" title=""></td>
-    </tr>
-	
-    </tbody>
-    <tfoot style="background-color: #c0c0c0; color: #ffffff; font-size: 0.9em; ">
-    <tr>
-        <th>游戏名</th>
-        <th>游戏ID</th>
-        <th>微信号</th>
-		<th>事件性质</th>
-    </tr>
-    </tfoot>
+<body>
+<iframe frameborder="0" style="position: absolute; display: none; opacity: 0;"></iframe>
+<div class="syxy">
+  <!--<div class="sya sy"><img src="static/picture/1747122572142_jiaoyi.jpg" width=70% height=70% class="autoimg" alt="" style="display: block; margin: 0 auto;></div>-->
+  <div class="pc"><img src="static/picture/200.png" width=10% height=10% alt=""></div>
+  <div class="pc">
+    <!--<img src="static/picture/1.png" width=10% height=10% alt="">
+	<img src="static/picture/2.png" width=10% height=10% alt="">
+	<img src="static/picture/3.png" width=10% height=10% alt="">
+	<img src="static/picture/4.png" width=10% height=10% alt="">
+	<img src="static/picture/5.png" width=10% height=10% alt="">-->
+	<div class="colorfocus">梦幻西游畅玩服</div>
+	<img src="static/picture/珍宝阁.png" width=5% height=5% alt="" class="zoom-img">
+	<div class="container"><a href="beginner.html">新手知识</a><a href="index.html">法宝合成</a><a href="cheatlist/index.html" target="_blank">骗子查询</a></div>
+  </div>
+  <div class="cheakblock">
+    <!--法宝合成-->
+    <div class="syc sy impCalculator cur">
+      <div class="answer">
+        <div class="ans2 answ">
+          <div class="soso fr">
+            <input type="text" value="请输入关键词查询" class="ans-txt input1" oninput="searchData(this,event)" onClick="if(this.value==&#39;请输入关键词查询&#39;){this.value=&#39;&#39;}" onBlur="if(this.value==&#39;&#39;){this.value=&#39;请输入关键词查询&#39;}" id="keywords">
+            <input type="button" class="input2" value="重  置" onclick="clean()">
+          </div>
+        </div>
+        <div class="ans3 answ">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr class="noborder">
+                <td width="50%" class="title1">法宝名称</td>
+                <td class="title1 tt">材料-五行</td>
+              </tr>
+            </tbody>
+          </table>
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" id="result">
+		  <tbody>
+		  <tr>
+		      <td width="50%">碧玉葫芦</td><td align="center">天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水</td>
+		  </tr>
+		  <tr>
+		      <td width="50%">飞剑</td><td align="center">玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
+		  </tr>
+		  <tr>
+		      <td width="50%">试剑石</td><td align="center">麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木</td>
+		  </tr>
+		  <tr>
+		      <td width="50%">金甲仙衣</td><td align="center">天蚕丝-金&nbsp&nbsp玄龟板-水&nbsp&nbsp内丹-土</td>
+		  </tr>
+		  </tbody>    
+		  <tbody>
+        <tr class="no_data" style="display: none;">
+          <td colspan="2">找不到相关结果，换个法宝名称试试！ </td>
+        </tr>
+      </tbody>
 </table>
+        </div>
+      </div>
+    </div>
+    <!--法宝合成-->
 
-<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="js/dataTables.buttons.min.js"></script>
-<script type="text/javascript" src="js/jszip.min.js"></script>
-<script type="text/javascript" src="js/pdfmake.min.js"></script>
-<script type="text/javascript" src="js/vfs_fonts.js"></script>
-<script type="text/javascript" src="js/buttons.html5.min.js"></script>
-<script type="text/javascript" src="js/buttons.print.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript" src="js/jquery.mark.min.js"></script>
-<script type="text/javascript" src="js/datatables.mark.js"></script>
-<script type="text/javascript" src="js/buttons.colVis.min.js"></script>
-<footer style="text-align:right;">
-<br>信息提交请联系<img border="0"  src="./images/wx.png" width=10% height=10% alt="" class="zoom-img" alt="" title="">
-</footer>
-<!-- 加群代码获取http://qun.qq.com/join.html -->
-<button id="showButton">免责声明</button>
-<div id="content" style="display:none;">
-本站中所有收集的信息全部来源于游戏内玩家发言，具体真实与否与本站无关。仅限用于安全的防骗游戏体验。<br>
-禁止用于诬蔑或诽谤他人造成恶意仲伤，发生一切后果与本站无关，发布言论者自行承担责任.<br>
-本站全部资源来源于游戏或网友投稿，本站不保证所有资源的真实性，出于安全考虑，请谨慎辨别。<br>
-仅供用于娱乐和交流，请勿用于商业用途。如有侵权、不妥之处，请联系我们以便更正或删除。敬请谅解!</div>
- 
+  </div>
+
+	<div id="" class="footer">
+		<div>
+    	
+		</div>
+	</div>
+
+</div>
+<script type="text/javascript" src="static/js/toolkit.js" charset="utf-8"></script>
+<script type="text/javascript" src="static/js/clip.js" charset="utf-8"></script>
+<div style="display:none">
+
+</div>
 <script>
-document.getElementById('showButton').addEventListener('click', function() {
-    var contentDiv = document.getElementById('content');
-    if (contentDiv.style.display === 'none') {
-        contentDiv.style.display = 'block'; // 显示内容
-    } else {
-        contentDiv.style.display = 'none'; // 隐藏内容（可选，如果你想在再次点击按钮时隐藏内容）
-    }
+$(function(){
+	$("#result").show();
 });
 </script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c3cd77582f2f67671e7d0bd0e8ed2589";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- START NetEase Devilfish 2025 -->
+<script type="text/javascript" src="static/js/ntes.js"></script>
+<script type="text/javascript">_ntes_nacc = "梦幻西游法宝合成";neteaseTracker();</script>
+<!-- END NetEase Devilfish 2025 -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -244,5 +206,4 @@ $(document).ready(function(){
 });
 </script>
 </body>
-
 </html>
