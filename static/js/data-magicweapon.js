@@ -9,7 +9,7 @@
 {"question":"惊魂铃","opt1":"阴沉木-木&nbsp&nbsp补天石-土&nbsp&nbsp内丹-火"},
 {"question":"嗜血幡","opt1":"天蚕丝-金&nbsp&nbsp麒麟血-水&nbsp&nbsp内丹-土"},
 {"question":"风袋","opt1":"天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水"},
-{"question":"清心咒","opt1":"天蚕丝-金&nbsp&nbsp阴沉木-木&nbsp&nbsp内丹-水"},
+{"question":"清心咒","opt1":"天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水"},
 {"question":"九黎战鼓","opt1":"玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
 {"question":"盘龙壁","opt1":"玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
 {"question":"神行飞剑","opt1":"玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
