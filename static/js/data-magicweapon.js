@@ -17,7 +17,7 @@
 {"question":"天师符","opt1":"麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
 {"question":"织女扇","opt1":"天蚕丝-金&nbsp&nbsp麒麟血-水&nbsp&nbsp内丹-土"},
 {"question":"五色旗盒","opt1":"天蚕丝-金&nbsp&nbsp阴沉木-木&nbsp&nbsp内丹-水"},
-{"question":"雷兽","opt1":"天蚕丝-金&nbsp&nbsp麒麟血-水&nbsp&nbsp内丹-土"},
+{"question":"雷兽","opt1":"龙筋-金&nbsp&nbsp麒麟血-水&nbsp&nbsp内丹-土"},
 {"question":"迷魂灯","opt1":"天蚕丝-金&nbsp&nbsp阴沉木-木&nbsp&nbsp内丹-水"},
 {"question":"定风珠","opt1":"天蚕丝-金&nbsp&nbsp麒麟血-水&nbsp&nbsp内丹-土"},
 
