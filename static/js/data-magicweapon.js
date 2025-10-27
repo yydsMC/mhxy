@@ -1,7 +1,7 @@
  var a = {'xlinfo': [
 {"question":"碧玉葫芦","opt1":"天蚕丝-金&nbsp&nbsp阴沉木-木&nbsp&nbsp内丹-水"},
 {"question":"飞剑","opt1":"玄龟板-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
-{"question":"试剑石","opt1":"麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
+{"question":"拭剑石","opt1":"麒麟血-水&nbsp&nbsp补天石-土&nbsp&nbsp内丹-木"},
 {"question":"金甲仙衣","opt1":"天蚕丝-金&nbsp&nbsp玄龟板-水&nbsp&nbsp内丹-土"},
 {"question":"缚妖索","opt1":"天蚕丝-金&nbsp&nbsp金凤羽-土&nbsp&nbsp内丹-水"},
 {"question":"鬼脸面具","opt1":"天蚕丝-金&nbsp&nbsp玄龟板-水&nbsp&nbsp内丹-土"},
