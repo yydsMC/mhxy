@@ -1878,6 +1878,7 @@
             <div class="nav-title">梦幻工具箱</div>
             <div class="nav-links">
                 <a href="#" class="nav-link active" data-section="five-sects">新区五门</a>
+				<a href="https://175dt.com/" class="nav-link nav-external" target="_blank">梦幻题库</a>
 				<a href="#" class="nav-link" data-section="level-query">升级查询</a>
 				<a href="#" class="nav-link" data-section="monthly">活动玩法</a>
 				<a href="#" class="nav-link" data-section="item-management">物品管理</a>
@@ -1974,7 +1975,8 @@
         <div class="section active" id="five-sects">
             <h2 class="section-title">新区</h2>
             <div class="summary-section">
-			   <button class="expand-collapse-btn" id="pets-btn">221或五门</button>
+			   <button class="expand-collapse-btn" id="five-sects-btn">221或五门</button>
+			   <div class="collapsible-content" id="five-sects-content">
 			   <div class="summary-item-title"><span style='color:red;'>瑞兽礼包：MHXY-MFLB-6666-0304</span></div>
 			   <div class="summary-item-title"><span style='color:red;'>"梦回建邺"新手礼包：MHXY-2003-1218-9999--瑞兽</span></div>
 			   <div class="summary-item-title"><span style='color:black;'>&nbsp&nbsp&nbsp&nbsp兑换即可领取携带"泰山压顶"、"高级驱鬼"的召唤兽"古代瑞兽"。</span></div>
@@ -2104,6 +2106,7 @@
                         <div class="summary-item-title">罗汉金钟：全队受到的法术伤害减半（持续3回合，包括使用特技的当前回合）</div>
                     </div>
                 </div>
+				</div>
                 
 			   <!-- 剧情技能部分添加展开/收起功能 -->
 			   <button class="expand-collapse-btn" id="story-skill-btn">剧情技能</button>
@@ -3350,7 +3353,7 @@
                     type: "talisman",
                     level: "1级辅助法宝",
 					skillLevel: "",
-                    materials: "天蚕丝-金<br/>玄龟板-水<br/>内丹-土",
+                    materials: "天蚕丝-金<br/>千年阴沉木-木<br/>内丹-土",
                     formula: "",
                     notes: ""
                 },
@@ -5668,8 +5671,9 @@
                                 contentId = 'merchant-instruction-content';
                                 break;
                             case '221或五门':
+							    contentId = 'five-sects-content';
                                 // 这个按钮没有对应的折叠内容，跳过
-                                return;
+                                break;// return;
                             default:
                                 // 通用匹配规则
                                 if (button.id && button.id.endsWith('-btn')) {
